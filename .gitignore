@@ -8,8 +8,6 @@ __pycache__/
 venv/
 env/
 
-# Scraper raw data
-scraper/nikke_scraped.json
 
 # Claude Code local settings
 .claude/settings.local.json
