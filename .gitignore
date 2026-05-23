@@ -11,3 +11,6 @@ env/
 
 # Claude Code local settings
 .claude/settings.local.json
+
+# Streamlit logs
+*.log
