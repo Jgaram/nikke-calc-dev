@@ -14,3 +14,6 @@ env/
 
 # Streamlit logs
 *.log
+
+# 니케 정보 CSV (개인 데이터)
+니케정보_*.csv
