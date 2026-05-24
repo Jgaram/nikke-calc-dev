@@ -27,14 +27,14 @@ git log --oneline --after="<마지막 publish 시간>"
 
 수집한 커밋 메시지들을 보여주고, 이를 바탕으로 publish 커밋 메시지 초안을 만들어 유저에게 제안한다. 승인 없이 진행하지 않는다.
 
-### 4. 파일 동기화
+### 3. 파일 동기화
 
 변경 대상 폴더/파일을 `/c/tmp/nikke-deploy`에 통째로 복사한다:
 ```
 cp -r app.py ui/ calculator/ data/ image/ requirements.txt /c/tmp/nikke-deploy/
 ```
 
-### 5. 커밋 및 push
+### 4. 커밋 및 push
 
 ```
 cd /c/tmp/nikke-deploy
