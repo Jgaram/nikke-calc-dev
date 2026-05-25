@@ -8,7 +8,7 @@ public repo(`nikke-calc`)에 현재 앱 상태를 배포한다.
 
 `/c/tmp/nikke-deploy`가 없으면 먼저 clone한다:
 ```
-git clone https://github.com/hhjj7210-code/nikke-calc.git /c/tmp/nikke-deploy
+git clone https://github.com/Jgaram/nikke_calc.git /c/tmp/nikke-deploy
 ```
 
 ### 2. 마지막 publish 시점 확인
