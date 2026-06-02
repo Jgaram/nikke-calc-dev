@@ -28,7 +28,7 @@ git log --oneline --after="<마지막 publish 시간>"
 ### 3. 파일 동기화
 
 ```
-cp -r app.py ui/ calculator/ data/ image/ requirements.txt /c/tmp/nikke-deploy/
+cp -r app.py ui/ calculator/ data/ image/ requirements.txt CLAUDE.md context/ /c/tmp/nikke-deploy/
 cp -r .claude/ /c/tmp/nikke-deploy/
 rm /c/tmp/nikke-deploy/.claude/commands/publish.md
 ```
