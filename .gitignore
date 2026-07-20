@@ -20,3 +20,6 @@ env/
 
 # 개인 메모
 memo.txt
+
+# Playwright MCP 산출물 (브라우저 스냅샷·콘솔 로그)
+.playwright-mcp/
