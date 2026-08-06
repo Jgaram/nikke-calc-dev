@@ -1,7 +1,6 @@
 ---
 name: commit
-description: 변경 사항을 논리 단위로 묶어 커밋. 승인·플랜 출력 없이 즉시 커밋한다.
-disable-model-invocation: true
+description: 변경 사항을 논리 단위로 묶어 커밋. 승인·플랜 출력 없이 즉시 커밋한다. 유저가 "커밋해"·"커밋해줘"라고 말하면 이 스킬을 부른다.
 ---
 
 # commit
