@@ -26,3 +26,6 @@ memo.txt
 
 # 딜량 보고서 (스펙·산출물 모두 로컬 전용)
 reports/
+
+# 동결된 구 코드 (archive/README.md 참조, 개발 종료)
+archive/
