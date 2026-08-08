@@ -1,17 +1,17 @@
-"""참조 엑셀 계산기 구동 CLI (Claude 전용).
+"""아카이브된 참조 엑셀 계산기 구동 CLI.
 
-`context/xlcalc.xlsx`(손계산 기반 참조 계산기)를 Excel COM으로 열어 딜러·서포터·
+`archive/xlcalc/xlcalc.xlsx`(손계산 기반 참조 계산기)를 Excel COM으로 열어 딜러·서포터·
 랩쳐 조건을 바꾸고 재계산한다. 우리 시뮬(`context/sim.py`) 결과를 대조할 때 쓴다.
 
-    python -m context.xlcalc --list
-    python -m context.xlcalc "신데렐라,아니스,마스트,앵커"
-    python -m context.xlcalc "신데렐라,아니스,마스트,앵커" --view cols
-    python -m context.xlcalc "신데렐라,아니스,마스트,앵커" --view buff
-    python -m context.xlcalc "라피" --core 1 --enemy-def 40000
+    python archive/xlcalc/xlcalc.py --list
+    python archive/xlcalc/xlcalc.py "신데렐라,아니스,마스트,앵커"
+    python archive/xlcalc/xlcalc.py "신데렐라,아니스,마스트,앵커" --view cols
+    python archive/xlcalc/xlcalc.py "신데렐라,아니스,마스트,앵커" --view buff
+    python archive/xlcalc/xlcalc.py "라피" --core 1 --enemy-def 40000
 
 첫 항목이 딜러, 나머지가 서포터1~4다. 이름은 **엑셀 시트의 이름**이며 우리
 `parsed_nikke.json`과 다르다 (엑셀 "마스트" = 우리 "마스트 : 로망틱 메이드").
-`--list`로 엑셀이 아는 이름을 확인한다. 상세는 `context/XLCALC.md`.
+`--list`로 엑셀이 아는 이름을 확인한다. 상세는 `archive/xlcalc/XLCALC.md`.
 
 원본 `xlcalc.xlsx`는 건드리지 않는다 — 매 실행마다 임시 사본을 열고 버린다.
 (`--save`를 주면 변경을 원본에 반영한다.)
@@ -181,7 +181,7 @@ def run(sets: dict, view: str, cycles: int, save: bool) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser(
-        description="참조 엑셀 계산기 구동 (context/xlcalc.xlsx)",
+        description="아카이브된 참조 엑셀 계산기 구동 (archive/xlcalc/xlcalc.xlsx)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=(
             "--view 종류\n"

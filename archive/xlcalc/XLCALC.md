@@ -1,13 +1,13 @@
-# 참조 엑셀 계산기 (xlcalc)
+# 아카이브된 참조 엑셀 계산기 (xlcalc)
 
 유저가 손으로 만든 스프레드시트 딜 계산기. 우리 시뮬레이터와 **독립적으로** 같은
 DealForm을 구현하고 있어, 시뮬 결과를 교차 검증하는 기준선으로 쓴다.
 
 | | |
 |---|---|
-| 원본 | `../계산기.xlsx` (2026-08-03 01:13 스냅샷, 499,735 B, 16시트) |
-| 정리본 | `context/xlcalc.xlsx` (233,286 B, 7시트) |
-| 구동 도구 | `context/xlcalc.py` |
+| 원본 | 외부 `계산기.xlsx` (2026-08-03 01:13 스냅샷, 499,735 B, 16시트) |
+| 정리본 | `archive/xlcalc/xlcalc.xlsx` (233,286 B, 7시트) |
+| 구동 도구 | `archive/xlcalc/xlcalc.py` |
 | 전제 | Windows + Excel 설치 + `pywin32`. 수식 재계산이 필요해 openpyxl로는 불가 |
 
 원본은 유저가 계속 편집한다. **정리본은 스냅샷이며 자동으로 따라가지 않는다.**
@@ -18,11 +18,11 @@ DealForm을 구현하고 있어, 시뮬 결과를 교차 검증하는 기준선�
 ## 1. 도구 사용법
 
 ```bash
-python -m context.xlcalc --list                              # 엑셀이 아는 딜러·서포터 이름
-python -m context.xlcalc "신데렐라,아니스,마스트,앵커"          # 요약
-python -m context.xlcalc "신데렐라,아니스,마스트,앵커" --view cols   # 열별 한발대미지·발수·소계
-python -m context.xlcalc "신데렐라,아니스,마스트,앵커" --view buff   # 위상별 버프 합산표
-python -m context.xlcalc "라피" --core 1 --enemy-def 40000 --element 1
+python archive/xlcalc/xlcalc.py --list                              # 엑셀이 아는 딜러·서포터 이름
+python archive/xlcalc/xlcalc.py "신데렐라,아니스,마스트,앵커"          # 요약
+python archive/xlcalc/xlcalc.py "신데렐라,아니스,마스트,앵커" --view cols   # 열별 한발대미지·발수·소계
+python archive/xlcalc/xlcalc.py "신데렐라,아니스,마스트,앵커" --view buff   # 위상별 버프 합산표
+python archive/xlcalc/xlcalc.py "라피" --core 1 --enemy-def 40000 --element 1
 ```
 
 첫 항목이 딜러, 나머지가 서포터1~4. 매 실행마다 임시 사본을 열고 버리므로
@@ -251,7 +251,7 @@ r19 = MAX(1, ①계수 × ⑦우월 × ②공방차 × ⑤유형별 × ⑥적받
 
 1. 원본이 Excel에서 열려 있으면 닫는다 (열려 있으면 `PermissionError`)
 2. 스냅샷을 뜨고 → 시트 7개만 남기고 → `§7` 표의 수정을 다시 적용한다
-3. `python -m context.xlcalc "..." --view buff`로 기본 스탯이 `calculator/base_stat.py`와
+3. `python archive/xlcalc/xlcalc.py "..." --view buff`로 기본 스탯이 `calculator/base_stat.py`와
    여전히 일치하는지 확인한다
 
 `§7`의 수정은 **원본에도 반영해 달라고 유저에게 알리는 편이 낫다** —
