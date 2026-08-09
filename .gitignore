@@ -27,7 +27,5 @@ memo.txt
 # 딜량 보고서 (스펙·산출물 모두 로컬 전용)
 reports/
 
-# archive의 기존 로컬 산출물은 무시하되 보존 대상으로 옮긴 파일은 추적
+# archive의 기존 로컬 산출물은 무시
 archive/*
-!archive/xlcalc/
-!archive/xlcalc/**
