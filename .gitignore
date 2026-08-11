@@ -26,6 +26,7 @@ memo.txt
 
 # 딜량 보고서 (스펙·산출물 모두 로컬 전용)
 reports/
+.report-work/
 
 # 파싱 현황 로스터 (context/roster.py 생성물)
 roster.html
