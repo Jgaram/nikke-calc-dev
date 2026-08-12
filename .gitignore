@@ -34,6 +34,9 @@ roster.html
 # archive의 기존 로컬 산출물은 무시
 archive/*
 
-# 커밋 스킬 (로컬 작업 도구 — public 배포본에 넣지 않는다)
+# 커밋 스킬
 .agent/skills/commit/
 .claude/skills/commit/
+
+# 이 파일 자신 (dev에서는 추적되지만 배포 트리에는 넣지 않는다)
+.gitignore
