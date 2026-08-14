@@ -38,5 +38,9 @@ archive/*
 .agent/skills/commit/
 .claude/skills/commit/
 
+# 배포 스킬 (public 레포 절차·계정 정보가 담겨 로컬 전용)
+.agent/skills/publish/
+.claude/skills/publish/
+
 # 이 파일 자신 (dev에서는 추적되지만 배포 트리에는 넣지 않는다)
 .gitignore
