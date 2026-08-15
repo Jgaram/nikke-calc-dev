@@ -29,8 +29,7 @@ profiles/
 # Playwright MCP 산출물 (브라우저 스냅샷·콘솔 로그)
 .playwright-mcp/
 
-# 딜량 보고서 (스펙·산출물 모두 로컬 전용)
-reports/
+# 딜량 보고서 작업 파일 (로컬 전용)
 .report-work/
 
 # archive의 기존 로컬 산출물은 무시
