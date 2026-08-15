@@ -23,9 +23,8 @@ memo.txt
 
 # blablalink 로그인 세션 (계정 접근권 = 절대 커밋 금지)
 scraper/.session_cookie
-# 유저 계정 수집물 (개인 육성 데이터 = 로컬 전용)
-scraper/user_scraped*.json
-scraper/user_preset*.json
+# 육성 프로필 (개인 계정 육성 데이터 = 로컬 전용)
+profiles/
 
 # Playwright MCP 산출물 (브라우저 스냅샷·콘솔 로그)
 .playwright-mcp/
