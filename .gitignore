@@ -32,6 +32,9 @@ profiles/
 # 딜량 보고서 작업 파일 (로컬 전용)
 .report-work/
 
+# 생성된 보고서 (로컬 전용)
+reports/
+
 # archive의 기존 로컬 산출물은 무시
 archive/*
 
