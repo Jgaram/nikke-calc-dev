@@ -35,6 +35,9 @@ profiles/
 # 생성된 보고서 (로컬 전용)
 reports/
 
+# 웹앱 빌드 산출물 (web/src + build.py에서 언제든 다시 만든다)
+web/dist/
+
 # archive의 기존 로컬 산출물은 무시
 archive/*
 
