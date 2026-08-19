@@ -49,5 +49,8 @@ archive/*
 .agent/skills/publish/
 .claude/skills/publish/
 
+# 웹앱 로드맵 (내부 결정 문서. dev에서는 추적되지만 배포 트리에는 넣지 않는다)
+webapp-roadmap.md
+
 # 이 파일 자신 (dev에서는 추적되지만 배포 트리에는 넣지 않는다)
 .gitignore
